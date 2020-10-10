@@ -1,0 +1,147 @@
+@import 'style';
+@import 'normalize';
+@import 'adapter';
+@import 'base';
+
+.viewport {
+  position: relative;
+  max-width: 25rem;
+  min-height: 48.267rem;
+  margin: 0 auto;
+  padding-bottom: 2.267rem;
+  background-color: #fff;
+}
+
+//搜索
+// .search_content {
+//   width: 100%;
+//   height: 3.267rem;
+//   background-color: #f4f4f4;
+
+//   .wrapper {
+//     float: left;
+//     position: relative;
+//     padding-left: 1.667rem;
+//     margin: 0.567rem 0 0.567rem 1rem;
+//     border-radius: 6px;
+//     background-color: #fff;
+
+//     input {
+//       width: 100%;
+//       height: 2.267rem;
+//     }
+//     &:before {
+//       position: absolute;
+//       top: 0.667rem;
+//       left: 0.333rem;
+
+//       font-size: 1rem;
+//       color: #d1d1d1;
+//     }
+//   }
+
+//   span {
+//     float: right;
+//     margin: 0.933rem 1.133rem 1rem 1rem;
+//     font-size: 0.933rem;
+//     color: #666;
+//   }
+// }
+
+.search_content {
+  width: 100%;
+  height: 3.267rem;
+  padding: 0.567rem 1.133rem 0.567rem 1rem;
+  background-color: #f4f4f4;
+
+  .wrapper {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 20rem;
+    height: 2.133rem;
+    padding-left: 1.667rem;
+    border-radius: 0.2rem;
+
+    background-color: #fff;
+
+    input {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0.6rem;
+      left: 0.333rem;
+
+      font-size: 0.933rem;
+      color: #d1d1d1;
+    }
+  }
+
+  span {
+    float: right;
+    margin-top: 0.5rem;
+    font-size: 0.933rem;
+    color: #666;
+  }
+}
+
+//搜索历史
+.search_history {
+  padding: 0.9rem 0.533rem 0 1.033rem;
+
+  .header {
+    margin-bottom: 0.9rem;
+    h4 {
+      font-size: 0.933rem;
+      font-weight: 500;
+    }
+    a {
+      padding: 0.167rem 1rem 1rem 0;
+      float: right;
+      color: #eee;
+    }
+  }
+
+  .keywords {
+
+    ul {
+      overflow: hidden;
+    }
+    
+    li {
+      float: left;
+      font-size: 0.8rem;
+
+      a {
+        display: block;
+        padding: 0.333rem 0.667rem;
+        margin-right: 0.833rem;
+        margin-bottom: 0.667rem;
+        color: #333;
+        background-color: #d8d8d8;
+      }
+    }
+  }
+}
+
+//底部固定条
+.bottombar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.267rem;
+  background-color: #fff;
+
+  .back {
+    width: 8.933rem;
+    height: 0.333rem;
+    margin: 0 auto;
+    margin-top: 1.333rem;
+    border-radius: 3.333rem;
+    background-color: #000;
+  }
+}

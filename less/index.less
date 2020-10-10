@@ -1,0 +1,231 @@
+@import 'style';
+@import 'normalize';
+@import 'adapter';
+@import 'base';
+
+.viewport {
+  position: relative;
+  max-width: 25rem;
+  min-height: 48.267rem;
+  margin: 0 auto;
+  padding-bottom: 5.867rem;
+  background-color: #f4f4f4;
+}
+
+// 顶部搜索
+.topsearch {
+  width: 100%;
+  height: 3.6rem;
+  padding: 0.733rem 1rem 0.6rem;
+  background-color: #EA4450;
+
+  .wrapper {
+    overflow: hidden;
+    width: 23rem;
+    height: 2.267rem;
+    border-radius: 0.2rem; 
+    background-color: #fff;
+
+    .search {
+      position: relative;
+      width: 7.333rem;
+      height: 100%;
+      margin-left: 7.433rem;
+      padding-left: 1.667rem;
+
+
+      input {
+        width: 100%;
+        height: 100%;
+        font-size: 0.933rem;
+        color: #666;
+      }
+
+      &:before {
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        color: #d1d1d1;
+        font-size: 1.133rem;
+      }
+    }
+  }
+}
+
+// 轮播图
+.banner {
+  position: relative;
+  ul {
+    li {
+      height: 11.333rem;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  ol {
+    position: absolute;
+    bottom: 0.667rem;
+    left: 11.167rem;
+    li {
+      float: left;
+      margin-right: 0.667rem;
+      width: 0.533rem;
+      height: 0.533rem;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,.6);
+
+      &.active {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+// 导航
+.navs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 7rem;
+
+  background-color: #fff;
+
+  a {
+    display: block;
+    flex: 1;
+
+    font-size: 0.8rem;
+    color: #333;
+    .img_box {
+      width: 4.267rem;
+      height: 4.267rem;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
+    }
+    span {
+      line-height: 1.133rem;
+    }
+  }
+}
+
+//公共部分
+.panel {
+  .header {
+    padding: 23px 0 0 0.8rem;
+    .img_box {
+      width: 8.533rem;
+      height: 2.333rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .main {
+    padding: 0.4rem 0 0.867rem 0.667rem;
+    background-color: #fff;   
+    ul {
+      overflow: hidden;
+    }
+    li {
+      float: left;
+      margin-right: 0.28rem;
+      margin-top: 0.267rem;       
+      a {
+        overflow: hidden;
+        display: block;
+        width: 7.687rem;
+        height: 6.333rem; 
+         
+      }     
+      &:first-child {
+        a{
+          width: 7.733rem;
+          height: 13rem;
+        }
+        
+      }
+    }
+  }
+}
+
+.sports,.decoration {
+  .main {
+    background-color: #fff;
+    li {
+      &:nth-child(2),&:nth-child(5){
+        a{
+          width: 9rem;
+          height: 6.333rem;
+        }
+       
+      }
+      &:nth-child(3),&:nth-child(4){
+        a{
+          width: 6.267rem;
+          height: 6.333rem;
+        }
+      }
+    }
+  }
+}
+
+//底部tabs
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  position: fixed;
+  bottom: 2.2rem;
+  left: 0;
+
+  width: 100%;
+  height: 3.567rem;
+  margin-top: 0.9rem;
+
+  background-color: #fff;
+
+  a {
+    flex: 1;
+    font-size: 1.667rem;
+    color: #333;
+
+    span {
+      display: block;
+      margin-top: 0.333rem;
+      font-size: 0.667rem;
+    }
+
+    &.active {
+      color: #FF2D4A;
+    }
+  }
+}
+
+//底部固定条
+.bottombar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2.267rem;
+  background-color: #fff;
+
+  .back {
+    width: 8.933rem;
+    height: 0.333rem;
+    margin: 0 auto;
+    margin-top: 1.333rem;
+    border-radius: 3.333rem;
+    background-color: #000;
+  }
+}
+
+
